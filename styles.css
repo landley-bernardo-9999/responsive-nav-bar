@@ -1,0 +1,59 @@
+@media (min-width: 200px) and (max-width: 500px){
+    #mainmenu ul{
+        display:none;
+    }
+    #mainmenu select{
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 500px){
+    #mainmenu select{
+        display: none;
+    }
+    #mainmenu ul{
+        margin-top: 0px;
+    }
+}
+
+body{
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+
+    --text-align: center;
+    --text-color: red;
+}
+
+#mainmenu{
+    background-color: green;
+    text-align: var(--text-align);
+}
+
+p{
+    font-size: 40px;
+    color: #000;
+    text-align: var(--text-align);
+}
+
+ul li{
+    display: inline-block;
+    width:80px;
+    text-align: var(--text-align);
+}
+
+ul li a{
+    color: #fff;
+    width: 100px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.selected{
+    background-color:#fff;
+}
+
+ul li.selected a{
+    color: #000;
+}
